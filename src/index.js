@@ -261,7 +261,7 @@ export default class AttachesTool {
           extension: name.split('.').pop(),
           name,
           size,
-          originalRoute,
+          originalRoute
         },
         title: name
       };
@@ -385,7 +385,7 @@ export default class AttachesTool {
         name: (file && file.name) || this._data.file.name,
         extension: (file && file.extension) || this._data.file.extension,
         size: (file && file.size) || this._data.file.size,
-        originalRoute: (file && file.originalRoute) || this._data.file.originalRoute,
+        originalRoute: (file && file.originalRoute) || this._data.file.originalRoute
       },
       title: title || this._data.title
     });
