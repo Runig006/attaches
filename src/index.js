@@ -42,7 +42,8 @@ const LOADER_TIMEOUT = 500;
  * @description Config supported by Tool
  * @property {string} endpoint - file upload url
  * @property {string} field - field name for uploaded file
- * @property {string} types - available mime-types
+ * @property {string} types - available mime-typesç
+ * @property {object} additionalRequestHeaders - allows to pass custom headers with Request
  * @property {string} placeholder
  * @property {string} errorMessage
  */
@@ -80,7 +81,8 @@ export default class AttachesTool {
       field: config.field || 'file',
       types: config.types || '*',
       buttonText: config.buttonText || 'Select file to upload',
-      errorMessage: config.errorMessage || 'File upload failed'
+      errorMessage: config.errorMessage || 'File upload failed',
+      additionalRequestHeaders: config.additionalRequestHeaders || null
     };
 
     this.data = data;
