@@ -131,7 +131,7 @@ export default class AttachesTool {
       button: 'cdx-attaches__button',
       title: 'cdx-attaches__title',
       size: 'cdx-attaches__size',
-      downloadButton: 'cdx-attaches__download-button NotLoad',
+      downloadButton: ['cdx-attaches__download-button', 'NotLoad'],
       fileInfo: 'cdx-attaches__file-info',
       fileIcon: 'cdx-attaches__file-icon',
     };
